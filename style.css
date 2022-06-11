@@ -1,0 +1,79 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+/* VARIABLES */
+:root {
+    --bg-color: #fff;
+    --link-color: #000;
+    --link-size: 1.1rem;
+    --right-side-bg-color: 81, 187, 254;
+}
+
+/* General CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-weight:  700;
+}
+
+html {
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+i {
+    cursor: pointer;
+}
+
+.mab {
+    position: relative;
+    background-color: #dddddd;
+    display: inline-flex;
+    margin: 2rem;
+}
+
+.mab__button {
+    background: none;
+    border:  none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 12px;
+    color:  #333333;
+    cursor: pointer;
+    font-size:  14px;
+}
+
+.mab__button:hover {
+    background: rgba(0,0,0,.05); 
+}
+
+.mab__button:not(.mab__button--menu) span.mab__icon {
+    margin-right: 8px;
+}
+.mab__button--secondary {
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.mab__list {
+    position: absolute;
+    display: none;
+    top: 115%;
+    right: 0;
+    padding: 5px 0;
+    background-color: #ffffff;
+    box-shadow:  0 0 2px rgba(0,0,0,.2);
+}
+
+.mab__list--visible {
+    display: initial;
+}
+
